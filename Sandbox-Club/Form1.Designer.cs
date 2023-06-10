@@ -89,7 +89,7 @@
             this.Email.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Email.Location = new System.Drawing.Point(479, 346);
-            this.Email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Email.Margin = new System.Windows.Forms.Padding(4);
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(381, 31);
             this.Email.TabIndex = 4;
@@ -104,7 +104,7 @@
             this.Pass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Pass.Location = new System.Drawing.Point(479, 407);
-            this.Pass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pass.Margin = new System.Windows.Forms.Padding(4);
             this.Pass.Name = "Pass";
             this.Pass.Size = new System.Drawing.Size(381, 31);
             this.Pass.TabIndex = 5;
@@ -121,7 +121,7 @@
             this.Pass2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Pass2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Pass2.Location = new System.Drawing.Point(479, 465);
-            this.Pass2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pass2.Margin = new System.Windows.Forms.Padding(4);
             this.Pass2.Name = "Pass2";
             this.Pass2.Size = new System.Drawing.Size(381, 31);
             this.Pass2.TabIndex = 6;
@@ -141,7 +141,7 @@
             this.Reg.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Reg.ForeColor = System.Drawing.Color.Black;
             this.Reg.Location = new System.Drawing.Point(479, 537);
-            this.Reg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Reg.Margin = new System.Windows.Forms.Padding(4);
             this.Reg.Name = "Reg";
             this.Reg.Size = new System.Drawing.Size(381, 64);
             this.Reg.TabIndex = 7;
@@ -172,7 +172,7 @@
             // 
             this.DataRozd.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.DataRozd.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DataRozd.CalendarForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.DataRozd.CalendarForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.DataRozd.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(238)))), ((int)(((byte)(88)))));
             this.DataRozd.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(221)))), ((int)(((byte)(40)))));
             this.DataRozd.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));

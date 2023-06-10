@@ -123,5 +123,23 @@ namespace Sandbox_Club
                 MessageBox.Show("Неверный логин или пароль", "Ошибка авторизации", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            form1.WindowState= FormWindowState.Maximized;
+            this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
