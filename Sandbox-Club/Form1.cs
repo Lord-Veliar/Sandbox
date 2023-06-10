@@ -192,7 +192,7 @@ namespace Sandbox_Club
                 people.Add(Pass.Text);
                 using (StreamWriter writer = new StreamWriter(path, true))
                 {
-                    await writer.WriteLineAsync(people[ind] + ';' + people[ind + 1] + ';' + people[ind + 2] + ';' + people[ind + 3]);
+                    await writer.WriteLineAsync(people[ind] + ';' + people[ind + 1] + ';' + people[ind + 2] + ';' + people[ind + 3] + ';' + people[ind + 4]);
                     writer.Close();
                 }
                 ind++;
