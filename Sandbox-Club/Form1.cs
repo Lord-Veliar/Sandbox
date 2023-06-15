@@ -166,6 +166,8 @@ namespace Sandbox_Club
             
             string logss = @"dannie.txt";
             string ddan;
+            string dr1 = "";
+            
             ddan = Email.Text;
             File.WriteAllText(logss, ddan);
             string path = @"Аккаунты.csv";
@@ -177,7 +179,7 @@ namespace Sandbox_Club
             foreach (string st in bufer)
             {
                 string[] bluf = st.Split(';');
-                if (bluf[2] == Email.Text)
+                if (bluf[3] == Email.Text)
                 {
                     protect++;
                 }
@@ -185,11 +187,52 @@ namespace Sandbox_Club
             }
             Regex par = new Regex("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+=])[0-9a-zA-z!@#$%^&*()_+=]{6,}$");
            
-            if (protect == 0 && NameText.Text != "Имя" && FFF.Text != "Фамилия" && Email.Text != "Email" && Pass.Text != "Пароль"&&DataRozd.Text!="Дата рождения"&&Pass2.Text!="Повторите пароль"&&Pass.Text==Pass2.Text&&par.IsMatch(Pass.Text))
+            if (protect == 0 && NameText.Text != "Имя" && FFF.Text != "Фамилия" && Email.Text != "Email" && Pass.Text != "Пароль"&&Pass2.Text!="Повторите пароль"&&Pass.Text==Pass2.Text&&par.IsMatch(Pass.Text))
             {
                 people.Add(NameText.Text);
                 people.Add(FFF.Text);
-                people.Add(DataRozd.Text);
+                string[] dr = DataRozd.Text.Split(' ');
+                switch (dr[1])
+                {
+                    case "января":
+                        dr[1] = "01";
+                            break;
+                    case "февраля":
+                        dr[1] = "02";
+                        break;
+                    case "марта":
+                        dr[1] = "03";
+                        break;
+                    case "апреля":
+                        dr[1] = "04";
+                        break;
+                    case "мая":
+                        dr[1] = "05";
+                        break;
+                    case "июня":
+                        dr[1] = "06";
+                        break;
+                    case "июля":
+                        dr[1] = "07";
+                        break;
+                    case "августа":
+                        dr[1] = "08";
+                        break;
+                    case "сентября":
+                        dr[1] = "09";
+                        break;
+                    case "октября":
+                        dr[1] = "10";
+                        break;
+                    case "ноября":
+                        dr[1] = "11";
+                        break;
+                    case "декабря":
+                        dr[1] = "12";
+                        break;
+                }
+                dr1 = dr[0] + "." + dr[1] + "." + dr[2];
+                people.Add(dr1);
                 people.Add(Email.Text);
                 people.Add(Pass.Text);
                 using (StreamWriter writer = new StreamWriter(path, true))
