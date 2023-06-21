@@ -253,11 +253,11 @@ namespace Sandbox_Club
             {
                 MessageBox.Show("Заполните все обязательные поля", "Ошибка регистрации", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (Pass2.Text!=Pass.Text)
+            if (Pass2.Text!=Pass.Text&&Pass.Text!="Пароль"&&Pass2.Text!="Повторите пароль")
             {
                 MessageBox.Show("Пароли не совпадают", "Ошибка регистрации", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (par.IsMatch(Pass.Text)==false)
+            if (par.IsMatch(Pass.Text)==false && Pass.Text != "Пароль" && Pass2.Text != "Повторите пароль")
             {
                 MessageBox.Show("Требования:\nМинимум одна цифра\nМинимум одна строчная латинская буква\nМинимум одна прописная латинская буква\nМинимум один специальный символ\nПароль должен содержать не менее 6 символов", "Пароль не соответствует требованиям", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
