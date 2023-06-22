@@ -88,5 +88,53 @@ namespace Sandbox_Club
             menu.WindowState = FormWindowState.Maximized;
             this.Close();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Zapis zapis = new Zapis();
+            zapis.Show();
+            if (Nazv.Text == "Гончарное дело")
+            {
+                zapis.label1.Text = "Гончарное дело (запись)";
+                zapis.button1.Enabled = true;
+                zapis.button1.Text = "10:00-11:00";
+                zapis.button2.Enabled = true;
+                zapis.button2.Text = "12:30-13:30";
+                zapis.button3.Enabled = true;
+                zapis.button3.Text = "16:00-17:00";
+              
+            }
+            if (Nazv.Text == "Эбру")
+            {
+                zapis.label1.Text = "Эбру (запись)";
+                zapis.button1.Enabled = true;
+                zapis.button1.Text = "8:30-10:00";
+                zapis.button2.Enabled = true;
+                zapis.button2.Text = "11:00-12:30";
+            }
+            if (Nazv.Text == "Организация праздников")
+            {
+                zapis.label1.Text = "Организация праздников";
+                zapis.button1.Enabled = true;
+                zapis.button1.Text = "13:30-15:30";
+                zapis.button2.Enabled = true;
+                zapis.button2.Text = "18:00-20:00";
+            }
+            if (Nazv.Text == "Музыкальные вечера")
+            {
+                zapis.label1.Text = "Музыкальные вечера";
+                zapis.button1.Enabled = true;
+                zapis.button1.Text = "20:00-21:30";
+                zapis.button2.Enabled = true;
+                zapis.button2.Text = "21:30-23:00";
+            }
+            if (Nazv.Text == "Рисование песком")
+            {
+                zapis.label1.Text = "Рисование песком (запись)";
+                zapis.button1.Enabled = true;
+                zapis.button1.Text = "17:00-18:00";
+
+            }
+        }
     }
 }
