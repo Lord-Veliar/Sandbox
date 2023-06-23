@@ -40,6 +40,8 @@
             this.ost2 = new System.Windows.Forms.Label();
             this.la3 = new System.Windows.Forms.Label();
             this.ost3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // date
@@ -48,6 +50,7 @@
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(139, 20);
             this.date.TabIndex = 3;
+            this.date.ValueChanged += new System.EventHandler(this.date_ValueChanged);
             // 
             // button1
             // 
@@ -102,7 +105,8 @@
             // 
             // oform
             // 
-            this.oform.Location = new System.Drawing.Point(298, 286);
+            this.oform.Enabled = false;
+            this.oform.Location = new System.Drawing.Point(298, 335);
             this.oform.Name = "oform";
             this.oform.Size = new System.Drawing.Size(75, 23);
             this.oform.TabIndex = 11;
@@ -165,11 +169,30 @@
             this.ost3.TabIndex = 17;
             this.ost3.Text = "0";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(179, 237);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(319, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Записаться можно минимум за день до начала мероприятия";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(314, 285);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 19;
+            // 
             // Zapis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.ost3);
             this.Controls.Add(this.la3);
             this.Controls.Add(this.ost2);
@@ -184,6 +207,7 @@
             this.Controls.Add(this.date);
             this.Name = "Zapis";
             this.Text = "Zapis";
+            this.Load += new System.EventHandler(this.Zapis_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,5 +226,7 @@
         public System.Windows.Forms.Label ost2;
         public System.Windows.Forms.Label la3;
         public System.Windows.Forms.Label ost3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
