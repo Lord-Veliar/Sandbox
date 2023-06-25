@@ -29,5 +29,21 @@ namespace Sandbox_Club
             profil.WindowState=FormWindowState.Maximized;
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Glavnaya glavnaya = new Glavnaya();
+            glavnaya.Show();
+            glavnaya.WindowState = FormWindowState.Maximized;
+            this.Close();
+        }
+
+        private void Zap_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Myz myz = new Myz();
+            myz.Show();
+            myz.WindowState = FormWindowState.Maximized;
+            this.Close();
+        }
     }
 }

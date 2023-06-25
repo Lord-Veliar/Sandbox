@@ -91,13 +91,14 @@ namespace Sandbox_Club
         {
             GPass.UseSystemPasswordChar = true;
         }
-        public string pe = "";
+
         private void button1_Click(object sender, EventArgs e)
         {
             string path = @"Аккаунты.csv";
             List<string> people = new List<string>();
             List<string> bufer = new List<string>();
             int protect = 0;
+            string pe="";
          bufer = File.ReadAllLines(path).ToList();
             foreach (string st in bufer)
             {
@@ -126,10 +127,11 @@ namespace Sandbox_Club
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
-            form1.WindowState= FormWindowState.Maximized;
-            this.Close();
+            //Form1 form1 = new Form1();
+            //form1.Show();
+            //form1.WindowState= FormWindowState.Maximized;
+            //this.Close();
+            Application.Restart();
         }
 
         private void label1_Click(object sender, EventArgs e)

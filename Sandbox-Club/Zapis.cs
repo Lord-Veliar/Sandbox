@@ -20,6 +20,7 @@ namespace Sandbox_Club
             InitializeComponent();
             date.MinDate = DateTime.Today;
             date.Format = DateTimePickerFormat.Short;
+  
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -148,13 +149,15 @@ namespace Sandbox_Club
         private void Zapis_Load(object sender, EventArgs e)
         {
           
-            //button1.Enabled = false;
-            //button2.Enabled = false;
-            //button3.Enabled = false;
+           
         }
 
         private void date_ValueChanged(object sender, EventArgs e)
         {
+            label4.Text = "";
+            //button1.Enabled = true;
+            //button2.Enabled = true;
+            //button3.Enabled = true;
             string logss = @"dannie.txt";
             string path2 = @"Записи.csv";
             List<string> people = new List<string>();
@@ -185,6 +188,7 @@ namespace Sandbox_Club
                         sh3++;
                     }
                 }
+               
             }
             if (label1.Text == "Музыкальные вечера")
             {
@@ -259,7 +263,7 @@ namespace Sandbox_Club
             {
                 button3.Enabled = true;
             }
-            if(Convert.ToString(date.Text+" 0:00:00")==Convert.ToString(date.MinDate))
+            if (Convert.ToString(date.Text + " 0:00:00") == Convert.ToString(date.MinDate))
             {
                 button1.Enabled = false;
                 button2.Enabled = false;
@@ -269,11 +273,12 @@ namespace Sandbox_Club
             button3.BackColor = Color.Orange;
       
             foreach (string st in people)
-                {
+            {
                 string[] bluf = st.Split(';');
                 if (bluf[5] == dan && bluf[2] == label1.Text && bluf[3] == date.Text)
                 {
                     oform.Enabled = false;
+                    label4.Text = "Вы уже записаны на данное мероприятие в этот день";
                     if (bluf[4] == button1.Text)
                     {
                         button1.BackColor = Color.YellowGreen;
@@ -298,5 +303,7 @@ namespace Sandbox_Club
                 }
             }
         }
+
+      
     }
 }

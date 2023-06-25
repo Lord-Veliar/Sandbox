@@ -42,6 +42,7 @@
             this.ost3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // date
@@ -102,6 +103,7 @@
             this.label1.Size = new System.Drawing.Size(97, 13);
             this.label1.TabIndex = 10;
             this.label1.Text = "Название Ивента";
+
             // 
             // oform
             // 
@@ -186,11 +188,20 @@
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 19;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(327, 209);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 13);
+            this.label4.TabIndex = 20;
+            // 
             // Zapis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ost3);
@@ -226,7 +237,8 @@
         public System.Windows.Forms.Label ost2;
         public System.Windows.Forms.Label la3;
         public System.Windows.Forms.Label ost3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
     }
 }
