@@ -297,9 +297,9 @@ namespace Sandbox_Club
 
         private void nazad_Click(object sender, EventArgs e)
         {
-            Menu menu = new Menu();
-            menu.Show();
-            menu.WindowState = FormWindowState.Maximized;
+            Glavnaya glavnaya = new Glavnaya();
+            glavnaya.Show();
+            glavnaya.WindowState = FormWindowState.Maximized;
             this.Close();
         }
     }

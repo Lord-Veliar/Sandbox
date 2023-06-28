@@ -38,6 +38,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.DataRozd = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -120,7 +121,7 @@
             this.Pass2.BackColor = System.Drawing.Color.White;
             this.Pass2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Pass2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Pass2.Location = new System.Drawing.Point(479, 465);
+            this.Pass2.Location = new System.Drawing.Point(479, 542);
             this.Pass2.Margin = new System.Windows.Forms.Padding(4);
             this.Pass2.Name = "Pass2";
             this.Pass2.Size = new System.Drawing.Size(381, 31);
@@ -140,7 +141,7 @@
             this.Reg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Reg.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Reg.ForeColor = System.Drawing.Color.Black;
-            this.Reg.Location = new System.Drawing.Point(479, 537);
+            this.Reg.Location = new System.Drawing.Point(479, 614);
             this.Reg.Margin = new System.Windows.Forms.Padding(4);
             this.Reg.Name = "Reg";
             this.Reg.Size = new System.Drawing.Size(381, 64);
@@ -158,7 +159,7 @@
             this.linkLabel1.DisabledLinkColor = System.Drawing.Color.Black;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(564, 605);
+            this.linkLabel1.Location = new System.Drawing.Point(564, 682);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(225, 29);
@@ -193,12 +194,27 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Дата рождения";
             // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(475, 442);
+            this.label3.MaximumSize = new System.Drawing.Size(400, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(385, 60);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Пароль должен содержать не менее 6 символов, 1 заглавный символ, 1 прописной симв" +
+    "ол, 1 цифра и специальный символ";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(245)))), ((int)(((byte)(176)))));
-            this.ClientSize = new System.Drawing.Size(1363, 641);
+            this.ClientSize = new System.Drawing.Size(1363, 718);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.DataRozd);
             this.Controls.Add(this.linkLabel1);
@@ -231,6 +247,7 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.DateTimePicker DataRozd;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

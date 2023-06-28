@@ -190,5 +190,13 @@ namespace Sandbox_Club
             }
             
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Glavnaya glavnaya = new Glavnaya();
+            glavnaya.Show();
+            glavnaya.WindowState = FormWindowState.Maximized;
+            this.Close();
+        }
     }
 }

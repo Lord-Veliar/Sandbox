@@ -127,6 +127,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Zapis.resx">
       <DependentUpon>Zapis.cs</DependentUpon>
@@ -143,6 +144,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\песок.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\праздники.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\хобби.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\эбру.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\музыка.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\гончар.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

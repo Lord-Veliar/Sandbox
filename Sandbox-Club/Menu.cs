@@ -45,5 +45,21 @@ namespace Sandbox_Club
             myz.WindowState = FormWindowState.Maximized;
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Profil profil = new Profil();
+            profil.Show();
+            profil.WindowState = FormWindowState.Maximized;
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Myz myz = new Myz();
+            myz.Show();
+            myz.WindowState = FormWindowState.Maximized;
+            this.Close();
+        }
     }
 }
