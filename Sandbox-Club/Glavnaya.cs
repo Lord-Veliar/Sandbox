@@ -22,7 +22,6 @@ namespace Sandbox_Club
         {
             ControlPaint.DrawBorder(e.Graphics, pictureBox1.ClientRectangle, Color.FromArgb(255, 214, 0), ButtonBorderStyle.Solid);
         }
-
         private void ggg_Click(object sender, EventArgs e)
         {
             Holidays g = new Holidays();
