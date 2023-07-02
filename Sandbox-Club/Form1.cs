@@ -155,13 +155,13 @@ namespace Sandbox_Club
 
         }
 
-        private void DataRozd_TextChanged(object sender, EventArgs e)
+        public void DataRozd_TextChanged(object sender, EventArgs e)
         {
             Regex regex = new Regex("^(?:0[1-9]|[12]\\d|3[01])([\\/.-])(?:0[1-9]|1[012])\\1(?:19|20)\\d\\d$");
             regex.IsMatch(DataRozd.Text);
         }
 
-        private async void Reg_Click(object sender, EventArgs e)
+        public async void Reg_Click(object sender, EventArgs e)
         {
             
             string logss = @"dannie.txt";

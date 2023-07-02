@@ -126,7 +126,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button Exx;
+        public System.Windows.Forms.Button Exx;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

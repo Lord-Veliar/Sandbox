@@ -238,14 +238,14 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox NameText;
-        private System.Windows.Forms.TextBox FFF;
-        private System.Windows.Forms.TextBox Email;
-        private System.Windows.Forms.TextBox Pass;
-        private System.Windows.Forms.TextBox Pass2;
-        private System.Windows.Forms.Button Reg;
+        public System.Windows.Forms.TextBox NameText;
+        public System.Windows.Forms.TextBox FFF;
+        public System.Windows.Forms.TextBox Email;
+        public System.Windows.Forms.TextBox Pass;
+        public System.Windows.Forms.TextBox Pass2;
+        public System.Windows.Forms.Button Reg;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.DateTimePicker DataRozd;
+        public System.Windows.Forms.DateTimePicker DataRozd;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
     }

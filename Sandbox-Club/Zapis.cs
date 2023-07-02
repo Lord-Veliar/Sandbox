@@ -146,12 +146,6 @@ namespace Sandbox_Club
         
         }
 
-        private void Zapis_Load(object sender, EventArgs e)
-        {
-          
-           
-        }
-
         private void date_ValueChanged(object sender, EventArgs e)
         {
             label4.Text = "";
@@ -278,7 +272,7 @@ namespace Sandbox_Club
                 if (bluf[5] == dan && bluf[2] == label1.Text && bluf[3] == date.Text)
                 {
                     oform.Enabled = false;
-                    label4.Text = "Вы уже записаны на данное мероприятие в этот день";
+                    label6.Text = "Вы уже записаны на данное мероприятие в этот день";
                     if (bluf[4] == button1.Text)
                     {
                         button1.BackColor = Color.YellowGreen;
